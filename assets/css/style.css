@@ -270,7 +270,7 @@ main {
   transition: var(--transition-1);
 }
 
-.partners-item img:hover {
+.partners-item>a:hover img {
   filter: grayscale(0.4);
 }
 
@@ -285,22 +285,12 @@ main {
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
-}
-
-.partner-img::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
   background: transparent;
-  z-index: 1;
   transition: var(--transition-1);
 }
 
-.partners-item>a:hover .partner-img::before {
-  background: hsla(0, 0%, 0%, 0.5);
+.partners-item>a:hover .partner-img {
+  background: hsla(0, 0%, 0%, 0.3);
 }
 
 .partner-item-icon-box {
