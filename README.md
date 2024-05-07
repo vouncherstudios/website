@@ -24,6 +24,6 @@ Our partners:
 
 - [Rede Arcadia](https://redearcadia.com)
 
-# License
+## License
 
 [MIT](https://github.com/vouncherstudios/website/blob/master/LICENSE)
