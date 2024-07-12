@@ -44,12 +44,7 @@ After building the project, you can open `index.html` in your browser to view th
 
 We are proud to collaborate with:
 
-<div>
-  <img href="https://redearcadia.com" src="./assets/img/partners/redearcadia.png" width="80" alt="Rede Arcadia"/>
-  <a href="https://redearcadia.com" target="_blank">
-    <p>Rede Arcadia</p>
-  </a>
-</div>
+- [Rede Arcadia](https://redearcadia.com): a Minecraft server network for Java Edition.
 
 ## License
 
