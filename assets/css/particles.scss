@@ -6,91 +6,91 @@ $THIRD_TIME: 180s;
 $FOURTH_TIME: 200s;
 
 .animation-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .particle,
 .particle:after {
-    background: transparent;
+  background: transparent;
 }
 
 .particle:after {
-    position: absolute;
-    content: "";
-    top: $SPACING;
+  position: absolute;
+  content: "";
+  top: $SPACING;
 }
 
 @mixin particles($max) {
-    box-shadow: particles($max);
-    border-radius: 50%;
+  box-shadow: particles($max);
+  border-radius: 50%;
 }
 
 @function particles($max) {
-    $val: 0px 0px $PARTICLE_COLOR;
+  $val: 0px 0px $PARTICLE_COLOR;
 
-    @for $i from 1 through $max {
-        $val: #{$val}, random($SPACING)+px random($SPACING)+px $PARTICLE_COLOR;
-    }
+  @for $i from 1 through $max {
+    $val: #{$val}, random($SPACING)+px random($SPACING)+px $PARTICLE_COLOR;
+  }
 
-    @return $val;
+  @return $val;
 }
 
-.particle-1 {
-    animation: particleAnimation $FIRST_TIME linear infinite;
-    @include particles(1000);
-    height: 2px;
-    width: 2px;
+.particle-w {
+  animation: particleAnimation $FIRST_TIME linear infinite;
+  @include particles(1000);
+  height: 2px;
+  width: 2px;
 }
 
-.particle-1:after {
-    @include particles(900);
-    height: 2px;
-    width: 2px;
+.particle-w:after {
+  @include particles(900);
+  height: 2px;
+  width: 2px;
 }
 
-.particle-2 {
-    animation: particleAnimation $SECOND_TIME linear infinite;
-    @include particles(800);
-    height: 2px;
-    width: 2px;
+.particle-x {
+  animation: particleAnimation $SECOND_TIME linear infinite;
+  @include particles(800);
+  height: 2px;
+  width: 2px;
 }
 
-.particle-2:after {
-    @include particles(500);
-    height: 3px;
-    width: 3px;
+.particle-x:after {
+  @include particles(500);
+  height: 3px;
+  width: 3px;
 }
 
-.particle-3:after {
-    @include particles(1100);
-    height: 3px;
-    width: 3px;
-    border-radius: 50%;
+.particle-y:after {
+  @include particles(1100);
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
 }
 
-.particle-4 {
-    animation: particleAnimation $FOURTH_TIME linear infinite;
-    @include particles(1200);
-    height: 1px;
-    width: 1px;
+.particle-z {
+  animation: particleAnimation $FOURTH_TIME linear infinite;
+  @include particles(1200);
+  height: 1px;
+  width: 1px;
 }
 
-.particle-4:after {
-    @include particles(700);
-    height: 1px;
-    width: 1px;
+.particle-z:after {
+  @include particles(700);
+  height: 1px;
+  width: 1px;
 }
 
 @keyframes particleAnimation {
-    from {
-        transform: translateY(0px);
-    }
+  from {
+    transform: translateY(0px);
+  }
 
-    to {
-        transform: translateY($SPACING * -1);
-    }
+  to {
+    transform: translateY($SPACING * -1);
+  }
 }

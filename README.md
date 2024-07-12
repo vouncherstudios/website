@@ -1,29 +1,56 @@
-<p align="center">
-  <img align='center' src='https://i.imgur.com/51H3WKr.png' height='250px'>
-</p>
+# Website
 
-<p align="center">
-   <a href="https://vouncherstudios.com">
-    <img alt="View Website" src="https://img.shields.io/badge/website-null?color=ff0076&label=View&style=for-the-badge">
-   </a>
-   <img alt="Open Pull Requests" src="https://img.shields.io/github/issues-raw/vouncherstudios/website?color=ff0076&label=issues&style=for-the-badge">
-   <img alt="Open Issues" src="https://img.shields.io/github/issues-pr-raw/vouncherstudios/website?color=ff0076&label=pull%20requests&style=for-the-badge">
-</p>
+Welcome to the official repository for the Vouncher Studios website. This is a simple landing page showcasing our partners and providing links to our platforms.
 
-<h1 align="center">website</h1>
+## Features
 
-<a href="https://discord.gg/crZaJj9Pgq">
-  <img align='right' src='https://discord.com/api/guilds/904581152793329714/widget.png?style=banner4' width='200"'>
-</a>
+- **Responsive Design:** Crafted to provide an optimal viewing experience across a wide range of devices.
+- **Tailwind CSS:** Utilizes Tailwind CSS for styling, ensuring a modern and sleek design.
+- **SASS Integration:** Employs SASS for more efficient, structured styling.
+- **Dynamic Particles Effect:** Incorporates a captivating particles effect for an engaging user experience.
 
-The official website for Vouncher Studios.
+## Getting Started
 
-Particles were made based on [CSS Particles](https://codepen.io/alexitaylor/pen/RgxJwg) by [Alexi Taylor](https://codepen.io/alexitaylor).
+To get a local copy up and running follow these simple steps.
 
-Our partners:
+### Prerequisites
 
-- [Rede Arcadia](https://redearcadia.com)
+- Node.js version 16 or above.
+
+### Installation
+
+1. Clone the repo
+```sh
+git clone https://github.com/vouncherstudios/website.git
+```
+2. Install NPM packages
+```sh
+npm install
+```
+3. Build the project to generate the CSS files
+```sh
+npm run build
+```
+
+## Usage
+
+After building the project, you can open `index.html` in your browser to view the website locally.
+
+## Acknowledgements
+
+- Particles effect inspired by [CSS Particles](https://codepen.io/alexitaylor/pen/RgxJwg) by [Alexi Taylor](https://codepen.io/alexitaylor).
+
+## Partners
+
+We are proud to collaborate with:
+
+<div>
+  <img href="https://redearcadia.com" src="./assets/img/partners/redearcadia.png" width="80" alt="Rede Arcadia"/>
+  <a href="https://redearcadia.com" target="_blank">
+    <p>Rede Arcadia</p>
+  </a>
+</div>
 
 ## License
 
-[MIT](https://github.com/vouncherstudios/website/blob/master/LICENSE)
+Distributed under the MIT License. See the [LICENSE](LICENSE) file for more details.

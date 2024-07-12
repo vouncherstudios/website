@@ -2,53 +2,56 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 &bull; Vouncher Studios</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 &bull; Vouncher Studios</title>
 
-  <meta http-equiv="refresh" content="3; URL='https://vouncherstudios.com/'" />
+    <meta http-equiv="refresh" content="3; URL='https://vouncherstudios.com/'" />
 
-  <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon">
 
-  <link rel="stylesheet" href="./assets/css/particles.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/particles.css">
+    <link rel="stylesheet" href="./assets/css/output.css">
 </head>
 
 <body>
-  <div class="animation-wrapper">
-    <div class="particle particle-1"></div>
-    <div class="particle particle-2"></div>
-    <div class="particle particle-3"></div>
-    <div class="particle particle-4"></div>
-  </div>
-
-  <main>
-    <div class="main-content">
-      <div class="container">
-        <section class="fzf">
-          <div class="fzf-image">
-            <figure class="image-box">
-              <img src="./assets/img/404.png" alt="404 Image" width="80">
-            </figure>
-          </div>
-
-          <h2 class="h2 container-title">Page Not Found</h2>
-          <section class="fzf-text">
-            <p>
-              You are being redirected to home page.
-            </p>
-          </section>
-        </section>
-      </div>
+    <div class="animation-wrapper">
+        <div class="particle particle-w"></div>
+        <div class="particle particle-x"></div>
+        <div class="particle particle-y"></div>
+        <div class="particle particle-z"></div>
     </div>
-  </main>
 
-  <script src="./assets/js/script.js"></script>
+    <div class="flex justify-center items-center flex-col min-h-screen select-none  ">
+        <main
+            class="my-4 mx-3.5 mb-20 min-w-64 sm:mt-16 sm:mb-24 lg:mb-16 xl:max-w-6xl xl:ms-auto xl:me-auto xl:flex xl:justify-center xl:items-stretch xl:gap-6">
+            <div class="relative w-max m-auto xl:min-w-148 xl:w-full xl:m-0">
+                <div
+                    class="bg-eerie-black border border-solid border-jet rounded-2xl p-3.5 z-10 min-h-fit mb-5 block sm:w-128 sm:ms-auto sm:me-auto sm:p-7 md:w-172 lg:w-236 xl:w-auto xl:min-w-184">
+                    <section class="mb-3.5">
+                        <div class="relative flex justify-center">
+                            <figure class="image-box">
+                                <img class="w-20 sm:w-40 xl:w-48" src="./assets/img/404.png" alt="404 Image">
+                            </figure>
+                        </div>
+
+                        <h2
+                            class="text-slate-50 text-2xl font-semibold mb-3.5 text-center relative pb-1.5 after:content-[''] after:absolute after:bottom-0 after:left-48% after:w-7 after:h-0.5 after:bg-gradient-to-br from-pink to-pink-dark after:rounded-sm sm:pb-3.5 sm:after:w-10 sm:after:h-1 sm:mb-5 md:pb-5">
+                            Page Not Found</h2>
+
+                        <section class="text-gray text-sm font-light text-center">
+                            <p class="mb-3.5">
+                                You are being redirected to home page.
+                            </p>
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
