@@ -531,8 +531,8 @@ main {
   }
 
   .main-content {
-    min-width: 75%;
-    width: 75%;
+    min-width: 600px;
+    width: 100%;
     margin: 0;
   }
 
@@ -559,5 +559,19 @@ main {
 
   .fzf-image img {
     width: 200px;
+  }
+}
+
+.containers-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* This makes sure that the wrapper takes at least the full height of the viewport */
+  flex-direction: column; /* This stacks the containers vertically. Remove or change to row for horizontal alignment */
+}
+@media (min-width: 1250px) {
+  .container {
+    width: 100%; /* Adjust this value as needed to control the width */
+    min-width: 750px; /* Set a minimum width to prevent the containers from becoming too small */
   }
 }
