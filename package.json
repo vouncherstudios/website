@@ -1,5 +1,13 @@
 {
+  "name": "website",
+  "description": "The official website for Vouncher Studios.",
+  "scripts": {
+    "build": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --minify && npx sass ./assets/css/particles.scss ./assets/css/particles.css --style=compressed"
+  },
   "devDependencies": {
     "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "sass": "^1.77.8"
   }
 }
