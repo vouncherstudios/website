@@ -33,6 +33,16 @@
 
     <link rel="stylesheet" href="/assets/css/particles.css">
     <link rel="stylesheet" href="/assets/css/output.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DBZWPCYV5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9DBZWPCYV5');
+    </script>
 </head>
 
 <body>
@@ -66,8 +76,9 @@
 
                     <ul class="flex justify-start items-center gap-3.5 pb-1 pl-1.5 pt-5 xl:justify-center">
                         <li>
-                            <a class="text-gray-70 text-lg hover:text-gray" href="https://github.com/vouncherstudios"
-                                target="_blank">
+                            <a href="https://github.com/vouncherstudios" target="_blank"
+                                class="text-gray-70 text-lg hover:text-gray"
+                                onclick="gtag('event', 'click', {'event_category': 'Social Media', 'event_label': 'GitHub'});">
                                 <span title="GitHub">
                                     <ion-icon name="logo-github" role="img" class="md hydrated block"></ion-icon>
                                 </span>
@@ -76,7 +87,8 @@
 
                         <li>
                             <a href="https://discord.gg/crZaJj9Pgq" target="_blank"
-                                class="text-gray-70 text-lg hover:text-gray">
+                                class="text-gray-70 text-lg hover:text-gray"
+                                onclick="gtag('event', 'click', {'event_category': 'Social Media', 'event_label': 'Discord'});">
                                 <span title="Discord">
                                     <ion-icon name="logo-discord" role="img" class="md hydrated block"></ion-icon>
                                 </span>
@@ -85,7 +97,8 @@
 
                         <li>
                             <a href="https://instagram.com/vouncherstudios" target="_blank"
-                                class="text-gray-70 text-lg hover:text-gray">
+                                class="text-gray-70 text-lg hover:text-gray"
+                                onclick="gtag('event', 'click', {'event_category': 'Social Media', 'event_label': 'Instagram'});">
                                 <span title="Instagram">
                                     <ion-icon name="logo-instagram" role="img" class="md hydrated block"></ion-icon>
                                 </span>
@@ -94,7 +107,8 @@
 
                         <li>
                             <a href="https://facebook.com/profile.php?id=61564021086137" target="_blank"
-                                class="text-gray-70 text-lg hover:text-gray">
+                                class="text-gray-70 text-lg hover:text-gray"
+                                onclick="gtag('event', 'click', {'event_category': 'Social Media', 'event_label': 'Facebook'});">
                                 <span title="Facebook">
                                     <ion-icon name="logo-facebook" role="img" class="md hydrated block"></ion-icon>
                                 </span>
@@ -103,7 +117,8 @@
 
                         <li>
                             <a href="https://twitter.com/vouncherstudios" target="_blank"
-                                class="text-gray-70 text-lg hover:text-gray">
+                                class="text-gray-70 text-lg hover:text-gray"
+                                onclick="gtag('event', 'click', {'event_category': 'Social Media', 'event_label': 'Twitter'});">
                                 <span title="Twitter">
                                     <ion-icon name="logo-twitter" role="img" class="md hydrated block"></ion-icon>
                                 </span>
@@ -112,7 +127,8 @@
 
                         <li>
                             <a href="https://polymart.org/user/vouncherstudios.35316" target="_blank"
-                                class="text-gray-70 text-lg hover:text-gray">
+                                class="text-gray-70 text-lg hover:text-gray"
+                                onclick="gtag('event', 'click', {'event_category': 'Social Media', 'event_label': 'Polymart'});">
                                 <span title="Polymart">
                                     <ion-icon name="cart-outline" role="img" class="md hydrated block"></ion-icon>
                                 </span>
@@ -130,7 +146,7 @@
                         <div
                             class="flex justify-center items-start gap-3.5 my-0 -mx-3.5 p-6 overflow-x-auto scroll-smooth overscroll-inline-contain snap-mandatory scroll-ps-6 scroll-pe-6 sm:gap-12 sm:my-0 sm:-mx-7 sm:p-11 sm:scroll-ps-11 sm:scroll-pe-11">
                             <div class="min-w-50% snap-start text-center sm:min-w-33% lg:min-w-25%">
-                                <a class="group inline-block relative" href="https://redearcadia.com" target="_blank">
+                                <a class="group inline-block relative" href="https://redearcadia.com" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Partners', 'event_label': 'Rede Arcadia'});"">
                                     <figure
                                         class="relative w-full h-auto rounded-2xl overflow-hidden mb-3.5 bg-transparent hover:bg-dark-lighter">
                                         <div
