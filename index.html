@@ -126,10 +126,9 @@
                         </li>
 
                         <li>
-                            <a href="https://polymart.org/user/vouncherstudios.35316" target="_blank"
-                                class="text-gray-70 text-lg hover:text-gray"
-                                onclick="gtag('event', 'click', {'event_category': 'Social Media', 'event_label': 'Polymart'});">
-                                <span title="Polymart">
+                            <a id="marketplaces" href="#"
+                               class="text-gray-70 text-lg hover:text-gray">
+                                <span title="Marketplaces">
                                     <ion-icon name="cart-outline" role="img" class="md hydrated block"></ion-icon>
                                 </span>
                             </a>
@@ -146,7 +145,7 @@
                         <div
                             class="flex justify-center items-start gap-3.5 my-0 -mx-3.5 p-6 overflow-x-auto scroll-smooth overscroll-inline-contain snap-mandatory scroll-ps-6 scroll-pe-6 sm:gap-12 sm:my-0 sm:-mx-7 sm:p-11 sm:scroll-ps-11 sm:scroll-pe-11">
                             <div class="min-w-50% snap-start text-center sm:min-w-33% lg:min-w-25%">
-                                <a class="group inline-block relative" href="https://redearcadia.com" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Partners', 'event_label': 'Rede Arcadia'});"">
+                                <a class="group inline-block relative" href="https://redearcadia.com" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Partners', 'event_label': 'Rede Arcadia'});">
                                     <figure
                                         class="relative w-full h-auto rounded-2xl overflow-hidden mb-3.5 bg-transparent hover:bg-dark-lighter">
                                         <div
@@ -168,6 +167,44 @@
                 </div>
             </div>
         </main>
+    </div>
+
+    <div id="marketplacesModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden">
+        <div class="relative bg-eerie-black border border-solid border-jet rounded-2xl p-3.5 z-10 min-h-fit mb-5 block sm:w-128 sm:ms-auto sm:me-auto sm:p-7 md:w-172 lg:w-236 xl:w-auto xl:min-w-184">
+            <section class="mb-3.5">
+                <h2 class="text-slate-50 text-2xl font-semibold mb-3.5 text-center relative pb-1.5 after:content-[''] after:absolute after:bottom-0 after:left-48% after:w-7 after:h-0.5 after:bg-gradient-to-br from-pink to-pink-dark after:rounded-sm sm:pb-3.5 sm:after:w-10 sm:after:h-1 sm:mb-5 md:pb-5">
+                    Marketplaces
+                </h2>
+                <button onclick="closeModal()" class="absolute top-2 right-2 text-gray-300 hover:text-white">
+                    <ion-icon name="close-outline" size="large"></ion-icon>
+                </button>
+                <div class="flex justify-center items-start gap-3.5 my-0 -mx-3.5 p-6 overflow-x-auto scroll-smooth overscroll-inline-contain snap-mandatory scroll-ps-6 scroll-pe-6 sm:gap-12 sm:my-0 sm:-mx-7 sm:p-11 sm:scroll-ps-11 sm:scroll-pe-11">
+                    <div class="min-w-50% snap-start text-center sm:min-w-33% lg:min-w-25%">
+                        <a class="group inline-block relative" href="https://polymart.org/user/vouncherstudios.35316" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Marketplaces', 'event_label': 'Polymart'});">
+                            <figure class="relative w-full h-auto rounded-2xl overflow-hidden mb-3.5 bg-transparent hover:bg-dark-lighter">
+                                <div class="opacity-0 bg-jet text-pink-light absolute top-2/4 left-2/4 transition ease-in-out transform-translate-center-scale-80 text-xl p-4 rounded-xl z-10 group-hover:opacity-100">
+                                    <ion-icon class="block" name="open-outline"></ion-icon>
+                                </div>
+                                <img class="w-full h-full max-w-40 max-h-28 object-cover grayscale-0 group-hover:grayscale-40 lg:h-auto sm:rounded-2xl" src="/assets/img/marketplaces/polymart.png" alt="Polymart Logo">
+                            </figure>
+                        </a>
+                        <p class="text-white bg-onyx text-xs font-light w-max py-1 px-4 rounded-lg m-auto mt-3.5">Polymart</p>
+                    </div>
+
+                    <div class="min-w-50% snap-start text-center sm:min-w-33% lg:min-w-25%">
+                        <a class="group inline-block relative" href="https://builtbybit.com/creators/vouncher-studios.487957" target="_blank" onclick="gtag('event', 'click', {'event_category': 'Marketplaces', 'event_label': 'BuiltByBit'});">
+                            <figure class="relative w-full h-auto rounded-2xl overflow-hidden mb-3.5 bg-transparent hover:bg-dark-lighter">
+                                <div class="opacity-0 bg-jet text-pink-light absolute top-2/4 left-2/4 transition ease-in-out transform-translate-center-scale-80 text-xl p-4 rounded-xl z-10 group-hover:opacity-100">
+                                    <ion-icon class="block" name="open-outline"></ion-icon>
+                                </div>
+                                <img class="w-full h-full max-w-40 max-h-28 object-cover grayscale-0 group-hover:grayscale-40 lg:h-auto sm:rounded-2xl" src="/assets/img/marketplaces/builtbybit.png" alt="BuiltByBit Logo">
+                            </figure>
+                        </a>
+                        <p class="text-white bg-onyx text-xs font-light w-max py-1 px-4 rounded-lg m-auto mt-3.5">BuiltByBit</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 
     <script src="/assets/js/script.js"></script>
